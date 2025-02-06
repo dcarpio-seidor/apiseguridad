@@ -1,5 +1,15 @@
 {
-  "dependencies": {
-    "express-generator-api": "^6.0.0"
-  }
+  "name": "apiseguridad-mta",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "mbt build --mtar=solution.mtar",
+    "deploy": "npm run build && cf deploy mta_archives/solution.mtar -f",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+content-length: 133
+content-type: application/json; charset=utf-8
+date: Fri, 07 Feb 2025 00:34:48 GMT
+etag: W/"85-uD0hG0kck2HFa95LtET7X9al900"
+x-powered-by: Express
+x-vcap-request-id: 8de85731-a7b1-496e-7a9a-9d60aecc9eb4
+strict-transport-security: max-age=31536000; includeSubDomains; preload;
+
+{"id":"daniel.carpio@seidor.com","name":{"givenName":"Daniel","familyName":"Carpio"},"emails":[{"value":"daniel.carpio@seidor.com"}]}

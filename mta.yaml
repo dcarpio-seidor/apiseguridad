@@ -1,3 +1,21 @@
-_schema-version: "3.2"
+_schema-version: "2.1"
 ID: apiseguridad-mta
 version: 0.0.1
+modules:
+  - name: apiseguridad-srv
+    type: nodejs
+    path: apiseguridad-srv
+    requires:
+      - name: apiseguridad-uaa
+    parameters:
+      stack: cflinuxfs4
+      memory: 256MB
+    provides:
+      - name: apiseguridad_api
+        properties:
+          url: ${default-url}
+resources:
+  - name: apiseguridad-uaa
+    type: org.cloudfoundry.existing-service
+    parameters:
+      service-name: apiseguridad-uaa-service
